@@ -1,5 +1,5 @@
-import { Knex, knex as setupKnex } from 'knex';
-import { env } from './env';
+import { Knex, knex as setupKnex } from 'knex'
+import { env } from './env'
 
 export const config: Knex.Config = {
   client: env.DATABASE_CLIENT,
@@ -11,6 +11,6 @@ export const config: Knex.Config = {
     extension: 'ts',
     directory: './db/migrations'
   }
-};
+}
 
 export const knex = setupKnex(config)
